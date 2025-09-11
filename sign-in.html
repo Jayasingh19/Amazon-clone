@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in Page</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Logo */
+        .signin-logo {
+            margin: 20px 0;
+            display: flex;
+            align-items: flex-start;
+            /* align top instead of center */
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .signin-logo img {
+            width: 100px;
+        }
+
+        /* ".in" part */
+
+        .signin-logo .domain {
+            font-size: 15px;
+            font-weight: 30;
+            color: #000;
+            margin-left: 2px;
+            margin-top: 6px;
+        }
+         
+
+        /* Sign-in Box */
+        .signin-box {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 350px;
+            background: #fff;
+
+        }
+
+        .signin-box h1 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: 250;
+        }
+
+        .signin-box label {
+            font-size: 14px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .signin-box input {
+            width: 100%;
+            padding: 8px;
+            border: 0.5px solid rgb(102, 97, 97);
+            border-radius: 4px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            box-shadow: inset;
+        }
+
+        .signin-box input:focus {
+
+            box-shadow: 0 0 4px 2px rgba(14, 177, 189, 0.5);
+            background-color: #e4f8fa;
+            border: 0.5px solid rgb(88, 87, 87);
+        }
+
+        .signin-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #f5c346;
+            border: 1px solid #d4cb47;
+            border-radius: 50px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .signin-btn:hover {
+            background-color: #e2b33b;
+        }
+
+
+        .privacy-text {
+            font-size: 13px;
+            margin-top: 15px;
+            color: #111;
+        }
+
+        .privacy-text a {
+            color: #0066c0;
+
+        }
+
+        .privacy-text a:hover {
+            text-decoration: underline;
+            color: #053d6e;
+        }
+
+
+        /* Divider */
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 20px 0;
+        }
+
+        /* New Account */
+        .new-account {
+            text-align: left;
+        }
+
+        .new-account p {
+            font-size: 13px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .new-account a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #0066c0;
+        }
+
+        .new-account a:hover {
+            text-decoration: underline;
+
+            color: #083d6b;
+        }
+
+        .full-width-line {
+            width: 100%;
+            height: 2px;
+            /* Amazon style: thoda mota space wali line */
+            background-color: #d8d8da;
+            margin-top: 50px;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #555;
+        }
+
+        .footer-links {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            margin: 0 10px;
+            color: #0066c0;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+             color: #053d6e; ;
+        }
+
+        /* Responsive */
+        @media (max-width: 400px) {
+            .signin-box {
+                width: 90%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Amazon Logo -->
+    <div class="signin-logo">
+        <a href="home.html">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+          </a>
+        <span class="domain">.in</span>
+      
+    </div>
+
+    <!-- Sign-in Box -->
+    <div class="signin-box">
+        <h1>Sign in or create account</h1>
+
+        <form action="#">
+            <label for="email">Enter mobile number or email</label>
+            <input type="text" id="email" required>
+
+            <button type="submit" class="signin-btn">Continue</button>
+        </form>
+
+        <p class="privacy-text">
+            By continuing, you agree to Amazon's
+            <a href="#">Conditions of Use</a> and
+            <a href="#">Privacy Notice</a>.
+        </p>
+
+        <hr>
+
+        <div class="new-account">
+            <p>Buying for work ?</p>
+            <a href="#">Create a free Business account</a>
+        </div>
+    </div>
+
+    <div class="full-width-line"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Conditions of Use</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Help</a>
+        </div>
+        <p>© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+    </footer>
+
+</body>
+
+</html>
+
+</body>
+
+</html>

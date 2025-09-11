@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .product { 
+        border: 1px solid #ccc;
+         padding: 20px;
+          width: 300px;
+           margin: 20px; 
+           display: inline-block;
+            vertical-align: top; 
+        }
+    .product img { 
+        width: 100%;
+     }
+    .product-title {
+         font-size: 20px; 
+         margin: 10px 0; 
+        }
+    .product-price {
+         font-size: 18px; 
+         color: green;
+         }
+    .add-btn { 
+        background: orange; 
+        color: white; 
+        padding: 10px;
+        border: none;
+         cursor: pointer;
+          margin-top: 10px;
+         }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <header class="navbar">
+    <!-- Logo -->
+    <div class="nav-logo nav-item" tabindex="0">
+      <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon Logo" />
+    </div>
+
+    <!-- Location -->
+    <div class="nav-location nav-item" tabindex="0">
+      <i class="fa-solid fa-location-dot"></i>
+      <div>
+        <p class="small">Deliver to</p>
+        <p class="bold">India</p>
+      </div>
+    </div>
+
+    <!-- Search -->
+    <div class="nav-search">
+      <select class="search-select">
+        <option>All</option>
+        <option>Electronics</option>
+        <option>Books</option>
+        <option>Fashion</option>
+      </select>
+      <input type="text" placeholder="Search Amazon" />
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <!-- Language -->
+    <div class="nav-lang nav-item" tabindex="0">
+      <img src="https://flagcdn.com/w40/in.png" alt="IN Flag" />
+      <select id="language-select">
+        <option>EN</option>
+        <option>HI</option>
+      </select>
+    </div>
+
+    <!-- Account -->
+    <div class="nav-account nav-item" tabindex="0">
+      <a href="sign-in.html">
+      <p class="small">Hello, sign in</p>
+      <p class="bold">Account & Lists</p></a>
+    </div>
+
+    <!-- Orders -->
+    <div class="nav-orders nav-item" tabindex="0">
+      <p class="small">Returns</p>
+      <p class="bold">& Orders</p>
+    </div>
+
+    <!-- Cart -->
+    <div class="nav-cart nav-item" tabindex="0">
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>
+      <span>Cart</span></a>
+    </div>
+  </header>
+
+  <!-- SECONDARY-NAVBAR -->
+  <nav class="secondary-navbar">
+    <ul>
+      <li><a href="#">All</a></li>
+      <li><a href="#">Fresh</a></li>
+      <li><a href="#">MX Player</a></li>
+      <li><a href="#">Sell</a></li>
+      <li><a href="#">Best Sellers</a></li>
+      <li><a href="#">Mobiles</a></li>
+      <li><a href="#">Today's Deals</a></li>
+      <li><a href="#">Prime</a></li>
+      <li><a href="#">Customer Service</a></li>
+      <li><a href="#">New Release</a></li>
+      <li><a href="#">Electronics</a></li>
+      <li><a href="#">Fashion</a></li>
+      <li><a href="#">Home & Kitchen</a></li>
+      <li><a href="#">Amazon Pay</a></li>
+      <li><a href="#">Computers</a></li>
+    </ul>
+  </nav>
+
+  <!-- PRODUCTS -->
+  <div class="product">
+    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg" alt="Cushion covers">
+    <h2 class="product-title">Cushion covers</h2>
+    <p class="product-price">₹299</p>
+    <p class="product-description">This is a simple product description.</p>
+    <label for="qty1">Quantity:</label>
+    <input type="number" id="qty1" value="1" min="1">
+    <button class="add-btn" onclick="addToCart('Cushion covers', 299, 'qty1')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg" alt="Figurines & more">
+    <h2 class="product-title">Figurines & more</h2>
+    <p class="product-price">₹199</p>
+    <p class="product-description">This is a simple product description.</p>
+    <label for="qty2">Quantity:</label>
+    <input type="number" id="qty2" value="1" min="1">
+    <button class="add-btn" onclick="addToCart('Figurines & more', 199, 'qty2')">Add to Cart</button>
+  </div>
+
+  <script>
+    function addToCart(name, price, qtyId) {
+      let quantity = parseInt(document.getElementById(qtyId).value);
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      let product = {
+        name: name,
+        price: price,
+        quantity: quantity
+      };
+
+      cart.push(product);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      alert(quantity + " x " + name + " added to cart!");
+    }
+  </script>
+
+</body>
+</html>

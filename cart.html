@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cart-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 20px;
+  }
+
+  .cart-item-details {
+    flex: 2;
+  }
+
+  .cart-item-details h3 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+  }
+
+  .cart-item-details p {
+    margin: 4px 0;
+    color: #555;
+    font-size: 14px;
+  }
+
+  .cart-item-actions {
+    flex: 1;
+    text-align: right;
+  }
+
+  .cart-item-actions span {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .cart-item-actions input {
+    width: 50px;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  .cart-item-actions button {
+    background-color: #ff9900;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+
+  .cart-item-actions button:hover {
+    background-color: #e68a00;
+  }
+
+  .cart-total {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  .checkout-btn {
+    /* float: right;  */
+    margin-top: 15px;
+    background-color: #ffd814;
+    border: 1px solid #fcd200;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0;
+
+  }
+  
+
+  .checkout-btn:hover {
+    background-color: #f7ca00;
+  }
+
+  .cart-summary {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  
+</style>
+
+<body>
+
+  <!-- Top Navbar -->
+  <header class="navbar">
+    <!-- Logo -->
+    <div class="nav-logo nav-item" tabindex="0">
+      <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon Logo" />
+    </div>
+
+    <!-- Location -->
+    <div class="nav-location nav-item" tabindex="0">
+      <i class="fa-solid fa-location-dot"></i>
+      <div>
+        <p class="small">Deliver to</p>
+        <p class="bold">India</p>
+      </div>
+    </div>
+
+    <!-- Search -->
+    <div class="nav-search">
+      <select class="search-select">
+        <option>All</option>
+        <option>Electronics</option>
+        <option>Books</option>
+        <option>Fashion</option>
+      </select>
+      <input type="text" placeholder="Search Amazon" />
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <!-- Language -->
+    <div class="nav-lang nav-item" tabindex="0">
+      <img src="https://flagcdn.com/w40/in.png" alt="IN Flag" />
+      <select id="language-select">
+        <option>EN</option>
+        <option>HI</option>
+      </select>
+    </div>
+
+    <!-- Account -->
+    <div class="nav-account nav-item" tabindex="0">
+      <a href="sign-in.html">
+      <p class="small">Hello, sign in</p>
+      <p class="bold">Account & Lists</p></a>
+    </div>
+
+    <!-- Orders -->
+    <div class="nav-orders nav-item" tabindex="0">
+      
+      <p class="small">Returns</p>
+      <p class="bold">& Orders</p>
+    </div>
+
+    <!-- Cart -->
+    <div class="nav-cart nav-item" tabindex="0">
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>
+        <span>Cart</span></a>
+    </div>
+  </header>
+
+  <!-- SECONDARY NAVBAR -->
+  <nav class="secondary-navbar">
+    <ul>
+      <li><a href="#">All</a></li>
+      <li><a href="#">Fresh</a></li>
+      <li><a href="#">MX Player</a></li>
+      <li><a href="#">Sell</a></li>
+      <li><a href="#">Best Sellers</a></li>
+      <li><a href="#">Mobiles</a></li>
+      <li><a href="#">Today's Deals</a></li>
+      <li><a href="#">Prime</a></li>
+      <li><a href="#">Customer Service</a></li>
+      <li><a href="#">New Release</a></li>
+      <li><a href="#">Electronics</a></li>
+      <li><a href="#">Fashion</a></li>
+      <li><a href="#">Home & Kitchen</a></li>
+      <li><a href="#">Amazon Pay</a></li>
+      <li><a href="#">Computers</a></li>
+    </ul>
+  </nav>
+
+
+  <body>
+
+    <div class="cart-container">
+      <h2>Your Shopping Cart</h2>
+
+      <!-- Cart Item 1 -->
+      <div class="cart-item">
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg"
+          alt="Product Image">
+        <div class="cart-item-details">
+          <h3>Cushion Covers</h3>
+          <p>High-quality decorative cushion covers for your living room.</p>
+        </div>
+        <div class="cart-item-actions">
+          <span>₹299</span>
+          <input type="number" value="1" min="1">
+          <button>Remove <i class="fa-solid fa-trash"></i></button>
+        </div>
+      </div>
+
+      <!-- Cart Item 2 -->
+      <div class="cart-item">
+        <img
+          src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg"
+          alt="Product Image">
+        <div class="cart-item-details">
+          <h3>Figurines & More</h3>
+          <p>Beautiful decorative figurines to enhance your home décor.</p>
+        </div>
+        <div class="cart-item-actions">
+          <span>₹199</span>
+          <input type="number" value="1" min="1">
+          <button>Remove <i class="fa-solid fa-trash"></i></button>
+        </div>
+      </div>
+
+      <!-- Total -->
+      <div class="cart-summary">
+        <div class="cart-total">Total: ₹498</div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+
+
+  
+
+
+<!-- CART SECTION
+<main class="cart-container">
+  <h2>Shopping Cart</h2>
+  <div id="cart-items"></div>
+  <h3 id="total">Total: ₹0</h3>
+  <button class="checkout-btn">Proceed to Checkout</button>
+</main>
+
+<script>
+  // Load cart from localStorage
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  let cartItemsDiv = document.getElementById("cart-items");
+  let total = 0;
+
+  if (cart.length === 0) {
+    cartItemsDiv.innerHTML = "<p>Your cart is empty.</p>";
+  } else {
+    cart.forEach((item, index) => {
+      let div = document.createElement("div");
+      div.classList.add("cart-item");
+      let itemTotal = item.price * item.quantity;
+      div.innerHTML = `
+          <p>
+            ${item.name} (x${item.quantity}) - ₹${itemTotal} 
+            <button onclick="removeItem(${index})">Remove</button>
+          </p>
+        `;
+      cartItemsDiv.appendChild(div);
+      total += itemTotal;
+    });
+  }
+
+  document.getElementById("total").textContent = "Total: ₹" + total;
+
+  // Remove item from cart
+  function removeItem(index) {
+    cart.splice(index, 1);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    location.reload();
+  }
+</script> -->
+
+</body>
+
+</html>

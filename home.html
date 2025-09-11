@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Top Navbar -->
+    <header class="navbar">
+
+        <!-- Logo -->
+        <div class="nav-logo nav-item" tabindex="0">
+            <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon Logo" />
+        </div>
+
+        <!-- Location -->
+        <div class="nav-location nav-item" tabindex="0">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+                <p class="small">Deliver to</p>
+                <p class="bold">India</p>
+            </div>
+        </div>
+
+
+        <div class="nav-search">
+            <select class="search-select">
+                <option>All</option>
+                <option>Electronics</option>
+                <option>Books</option>
+                <option>Fashion</option>
+            </select>
+            <input type="text" placeholder="Search Amazon" />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <!-- Language -->
+        <div class="nav-lang nav-item" tabindex="0">
+            <img src="https://flagcdn.com/w40/in.png" alt="IN Flag" />
+            <select id="language-select">
+                <option>EN</option>
+                <option>HI</option>
+            </select>
+        </div>
+
+        <!-- Account -->
+        <div class="nav-account nav-item" tabindex="0">
+          <a href="sign-in.html"> <p class="small">Hello, sign in </p>
+            <p class="bold">Account & Lists</p></a> 
+        </div>
+
+        <!-- Orders -->
+        <div class="nav-orders nav-item" tabindex="0">
+            <p class="small">Returns</p>
+            <p class="bold">& Orders</p>
+        </div>
+
+        <!-- Cart -->
+        <div class="nav-cart nav-item" tabindex="0">
+            <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i>
+                <span>Cart</span></a>
+        </div>
+    </header>
+
+
+    <!-- SECONDARY-NAVBAR -->
+
+    <nav class="secondary-navbar">
+        <ul>
+            <li><a href="#">All</a></li>
+            <li><a href="#">Fresh</a></li>
+            <li><a href="#">MX Player</a></li>
+            <li><a href="#">Sell</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Mobiles</a></li>
+            <li><a href="#">Today's Deals</a></li>
+            <li><a href="#">Prime</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">New Release</a></li>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Home & Kitchen</a></li>
+            <li><a href="#">Amazon Pay</a></li>
+            <li><a href="#">Computers</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- HERO-SECTION -->
+    <section class="hero-carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/sudipta/jupiter/gw/23rd_high_res._CB802095700_.jpg"
+                    alt="Slide 1">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/2024/BAU_BTF/Nov/Unrec/Shoes/1/30003._CB542120021_.jpg"
+                    alt="Slide 2">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Consumables/X-GL/Feb5/PC_Hero_1_3000._CB582457311_.jpg"
+                    alt="Slide 3">
+            </div>
+            <div class="fade"></div>
+
+            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn next">&#10095;</button>
+        </div>
+    </section>
+
+
+
+    <!-- FIRST-ROW-BOXES -->
+
+    <section class="section-padding">
+        <section class="big1-boxes-container">
+
+
+
+            <div class="big-box">
+                <h3 class="big-box-title">Revamp your home in style</h3>
+                <div class="small-products">
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg"
+                            alt="Product 1">
+                        <p class="product-name">Cushion covers</p>
+                        <p class="product-price"> ₹299</p>
+                        <a href="product.html">view details</a>
+
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg"
+                            alt="Product 2" />
+                        <p class="product-name">Figurines & more</p>
+                        <p class="product-price"> ₹199</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_storage_1._SY116_CB555624324_.jpg"
+                            alt="Product 3" />
+                        <p class="product-name">Home Storage</p>
+                        <p class="product-price"> ₹499</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_lighting_2._SY116_CB555624324_.jpg"
+                            alt="Product 4" />
+                        <p class="product-name">Lighting</p>
+                        <p class="product-price"> ₹339</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <a href="#" class="see-more-link">Explore all</a>
+                </div>
+            </div>
+
+
+            <div class="big-box">
+                <h3 class="big-box-title">Appliances for your home | Up to 55% off</h3>
+                <div class="small-products">
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg"
+                            alt="Product 5" />
+                        <p class="product-name">Air Conditioners</p>
+                        <p class="product-price"> ₹40999</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg"
+                            alt="Product 6" />
+                        <p class="product-name">Refrigerators</p>
+                        <p class="product-price">₹25000</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg"
+                            alt="Product 7" />
+                        <p class="product-name">Microwaves</p>
+                        <p class="product-price">₹16099</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg"
+                            alt="Product 8" />
+                        <p class="product-name">Washing Machines</p>
+                        <p class="product-price">₹12059</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <a href="#" class="see-more-link">See more</a>
+                </div>
+            </div>
+
+
+
+            <div class="big-box">
+                <h3 class="big-box-title">Starting ₹149 | Headphones</h3>
+                <div class="small-products">
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_boAt_0.5x._SY116_CB553870684_.jpg"
+                            alt="Product 1" />
+                        <p class="product-name">Boat</p>
+                        <p class="product-price">Starting ₹299</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Boult_0.5x._SY116_CB553870684_.jpg"
+                            alt="Product 2" />
+                        <p class="product-name">Boult</p>
+                        <p class="product-price"> Starting₹349</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Noise_0.5x._SY116_CB553870684_.jpg"
+                            alt="Product 3" />
+                        <p class="product-name">Noise</p>
+                        <p class="product-price">Starting ₹699</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/MSO/PD3/PC_QuadCard_Zeb_0.5x_1._SY116_CB570220221_.jpg"
+                            alt="Product 4" />
+                        <p class="product-name">Zebronics</p>
+                        <p class="product-price">Starting ₹199</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <a href="#" class="see-more-link">See all Offers</a>
+                </div>
+            </div>
+
+
+
+            <div class="big-box">
+                <h3 class="big-box-title">Under ₹499 | Deals on home improvement</h3>
+                <div class="small-products">
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Wipes_low_res_V1._SY116_CB549138744_.jpg"
+                            alt="Product 1" />
+                        <p class="product-name">Cleaning Supplies</p>
+                        <p class="product-price">Under ₹199</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Shower_heads_low_res_V1._SY116_CB549138744_.jpg"
+                            alt="Product 2" />
+                        <p class="product-name">Bathroom Accessories</p>
+                        <p class="product-price">Under ₹399</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Tools_low_res_V1._SY116_CB549138744_.jpg"
+                            alt="Product 3" />
+                        <p class="product-name">Home Tools</p>
+                        <p class="product-price">Under ₹499</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Wallpapers_low_res_V1._SY116_CB549138744_.jpg"
+                            alt="Product 4" />
+                        <p class="product-name">Wallpapers</p>
+                        <p class="product-price">Under ₹199</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <a href="#" class="see-more-link">Explore All</a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- SECOND ROW BOXES -->
+
+    <section class="section-padding">
+        <section class="big2-boxes-container">
+
+
+
+            <div class="big-box">
+                <h3 class="big-box-title">Get your desired TV screen size | Starting ₹6,999</h3>
+                <div class="small-products">
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Raghu/JulyBAU/turr_2._SY116_CB789347957_.jpg"
+                            alt="Product 1" />
+                        <p class="product-name">Budget TV's</p>
+                        <p class="product-price">₹13999</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Raghu/JulyBAU/turr_3._SY116_CB789347957_.jpg"
+                            alt="Product 2" />
+                        <p class="product-name">4k TV's</p>
+                        <p class="product-price">₹ 14099</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Raghu/JulyBAU/turr_1._SY116_CB789347957_.jpg"
+                            alt="Product 3" />
+                        <p class="product-name">Big Screens</p>
+                        <p class="product-price">₹16059</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Raghu/JulyBAU/turr_4._SY116_CB789347957_.jpg"
+                            alt="Product 4" />
+                        <p class="product-name">Ultra Premium TV's</p>
+                        <p class="product-price">₹17099</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <a href="#" class="see-more-link">See all</a>
+
+                </div>
+            </div>
+
+
+
+            <div class="big-box">
+                <h3 class="big-box-title">Automotive essentials | Up to 60% off</h3>
+                <div class="small-products">
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Glasscare1X._SY116_CB410830553_.jpg"
+                            alt="Product 5" />
+                        <p class="product-name">Cleaning products</p>
+                        <p class="product-price">₹439</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Rim_tyrecare1x._SY116_CB410830552_.jpg"
+                            alt="Product 6" />
+                        <p class="product-name">Tyre & Rim care</p>
+                        <p class="product-price">₹799</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vega_helmet_186x116._SY116_CB405090404_.jpg"
+                            alt="Product 7" />
+                        <p class="product-name">Helmets</p>
+                        <p class="product-price">₹999</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum1x._SY116_CB410830552_.jpg"
+                            alt="Product 8" />
+                        <p class="product-name">Vaccum Cleaner</p>
+                        <p class="product-price">₹1299</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <a href="#" class="see-more-link">See more</a>
+                </div>
+            </div>
+
+
+
+            <div class="big-box">
+                <h3 class="big-box-title">Starting ₹199 | Amazon Brands & more</h3>
+                <div class="small-products">
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_186_2._SY116_CB567468236_.jpg"
+                            alt="Product 1" />
+                        <p class="product-name">Bedsheets</p>
+                        <p class="product-price">₹199</p>
+                        <a href="product.html">view details</a>
+
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_186_3._SY116_CB567468236_.jpg"
+                            alt="Product 2" />
+                        <p class="product-name">curtains</p>
+                        <p class="product-price">₹199</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_186_4._SY116_CB567468236_.jpg"
+                            alt="Product 3" />
+                        <p class="product-name">Ironing Boards</p>
+                        <p class="product-price">₹299</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_186_1._SY116_CB567468236_.jpg"
+                            alt="Product 4" />
+                        <p class="product-name">Home Decor</p>
+                        <p class="product-price">Staring ₹199</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <a href="#" class="see-more-link">See more</a>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="big-box">
+                <h3 class="big-box-title">Up to 50% off | Baby care & toys | Amazon Brands</h3>
+                <div class="small-products">
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/PB/GW/PC/PC_QC_372x232_Life-Style_2_1x._SY116_CB788857785_.jpg"
+                            alt="Product 1" />
+                        <p class="product-name">Baby diapers</p>
+                        <p class="product-price">$29.99</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/PB/GW/PC/PC_QC_372x232_Life-Style_1_1x._SY116_CB788857785_.jpg"
+                            alt="Product 2" />
+                        <p class="product-name">rideons</p>
+                        <p class="product-price">$39.99</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/PB/GW/PC/PC_QC_372x232_Life-Style_3_1x._SY116_CB788857785_.jpg"
+                            alt="Product 3" />
+                        <p class="product-name">RC Car</p>
+                        <p class="product-price">$49.99</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/PB/GW/PC/PC_QC_372x232_Life-Style_4_1x._SY116_CB788857785_.jpg"
+                            alt="Product 4" />
+                        <p class="product-name">Safety Essentials</p>
+                        <p class="product-price">$59.99</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <a href="#" class="see-more-link">See all offers</a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <!-- WIDE-BOX 1 -->
+    <section class="section-padding">
+        <div class="amazon-section">
+            <div class="section-content">
+                <div class="section-title">
+                    Up to 60% off | Trending products from Emerging Businesses
+                    <a href="#" class="see-more-link">See more</a>
+                </div>
+
+                <div class="carousel-container">
+                    <button class="scroll-btn left">&#10094;</button>
+
+                    <div class="products">
+                        <img src="https://m.media-amazon.com/images/I/61JeMF3xF-L._AC_SY200_.jpg" alt="Product 1">
+                        <img src="https://m.media-amazon.com/images/I/81C1kDwAwOL._AC_SY200_.jpg" alt="Product 2">
+                        <img src="https://m.media-amazon.com/images/I/61MDuZOh5RL._AC_SY200_.jpg" alt="Product 3">
+                        <img src="https://m.media-amazon.com/images/I/41oeywYJaaL._AC_SY200_.jpg" alt="Product 4">
+                        <img src="https://m.media-amazon.com/images/I/71d2nwxv-1L._AC_SY200_.jpg" alt="Product 5">
+                        <img src="https://m.media-amazon.com/images/I/71xXsl4r0gL._AC_SY200_.jpg" alt="Product 6">
+                        <img src="https://m.media-amazon.com/images/I/61UKK19d8VL._AC_SY200_.jpg" alt="Product 7">
+                        <img src="https://m.media-amazon.com/images/I/81fYIAaq9UL._AC_SY200_.jpg" alt="Product 8">
+                        <img src="https://m.media-amazon.com/images/I/71adca78COL._AC_SY200_.jpg" alt="Product 9">
+                        <img src="https://m.media-amazon.com/images/I/715CrrRVtCL._AC_SY200_.jpg" alt="Product 10">
+                    </div>
+
+                    <button class="scroll-btn right">&#10095;</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- WIDE-BOX 2 -->
+    <section class="section-padding">
+        <div class="amazon-section">
+            <div class="section-content">
+                <div class="section-title">
+                    Starting ₹70,348 | Set off on your next great ride
+                    <a href="#" class="see-more-link">See more</a>
+                </div>
+
+                <div class="carousel-container">
+                    <button class="scroll-btn left">&#10094;</button>
+
+                    <div class="products">
+                        <img src="https://m.media-amazon.com/images/I/51zNfi2-HlL._AC_SY200_.jpg" alt="Product 1">
+                        <img src="https://m.media-amazon.com/images/I/51Bwgp3URHL._AC_SY200_.jpg" alt="Product 2">
+                        <img src="https://m.media-amazon.com/images/I/714iYWKtY3L._AC_SY200_.jpg" alt="Product 3">
+                        <img src="https://m.media-amazon.com/images/I/71HaDTIOagL._AC_SY200_.jpg" alt="Product 4">
+                        <img src="https://m.media-amazon.com/images/I/71yMX-W42lL._AC_SY200_.jpg" alt="Product 5">
+                        <img src="https://m.media-amazon.com/images/I/716JVEokEQL._AC_SY200_.jpg" alt="Product 6">
+                        <img src="https://m.media-amazon.com/images/I/61ig8vHLU7L._AC_SY200_.jpg" alt="Product 7">
+                        <img src="https://m.media-amazon.com/images/I/71sVwqAVf2L._AC_SY200_.jpg" alt="Product 8">
+                        <img src="https://m.media-amazon.com/images/I/71sWj2oOFnL._AC_SY200_.jpg" alt="Product 9">
+                        <img src="https://m.media-amazon.com/images/I/71BjxLLL-bL._AC_SY200_.jpg" alt="Product 10">
+                    </div>
+
+                    <button class="scroll-btn right">&#10095;</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- THIRD-ROW-SPECIAL-BOXES -->
+    <section class="section-padding">
+
+        <section class="big-boxes-container">
+
+            <!-- BOX-1 -->
+
+
+            <div class="big-box">
+                <div class="big-box-title">Keep shopping for <br> Hair Care</div>
+
+                <div class="main-product">
+                    <img src="https://m.media-amazon.com/images/I/41XKI-uMAoL._AC_SY175_.jpg" alt="Main Product">
+                    <div class="main-product-title">Pantene Advanced Hairfall Solution Shampoo, 340ML</div>
+                    <div class="main-product-price">₹286.00 <span class="old-price">₹345.00</span></div>
+                    <a href="product.html">view details</a>
+                </div>
+
+                <div class="suggested-thumbnails">
+                    <img src="https://m.media-amazon.com/images/I/41XKI-uMAoL._AC_SY175_.jpg" alt="Thumb 1">
+                    <img src="https://m.media-amazon.com/images/I/41qV88IVGdL._AC_SY55_.jpg" alt="Thumb 2">
+                    <img src="https://m.media-amazon.com/images/I/51ulx+9juZL._AC_SY55_.jpg" alt="Thumb 3">
+                    <img src="https://m.media-amazon.com/images/I/41R69jyJqsL._AC_SY55_.jpg" alt="Thumb 4">
+                </div>
+
+                <div class="see-more-link"><a href="#">See more</a></div>
+            </div>
+
+
+
+            <!--  BOX-2-->
+
+            <div class="big-box">
+                <div class="big-box-title">Customers’ Most-Loved Fashion for you</div>
+                <div class="small-products">
+                    <div class="small-product">
+                        <img src="https://m.media-amazon.com/images/I/61H548ZWlEL._AC_SY145_.jpg" alt="Product 1" />
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://m.media-amazon.com/images/I/61W-XPbIRvL._AC_SY145_.jpg" alt="Product 2" />
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://m.media-amazon.com/images/I/71StS5d27ZL._AC_SY145_.jpg" alt="Product 3" />
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://m.media-amazon.com/images/I/71Rep+3pCKL._AC_SY145_.jpg" alt="Product 4" />
+                        <a href="product.html">view details</a>
+                    </div>
+                </div>
+                <div class="see-more-link"><a href="#">Explore more</a></div>
+            </div>
+
+
+            <!-- BOX-3 -->
+
+            <div class="big-box">
+                <h3 class="big-box-title">Pick up where you left off</h3>
+                <div class="small-products">
+                    <div class="small-product">
+                        <img src="https://m.media-amazon.com/images/I/71IWhoJtK1L._AC_SY95_.jpg" alt="Product 1" />
+                        <p class="product-name">Symbol Premium Men's Cotton Stretch Solid Polo T-Shirt</p>
+                        <p class="product-price">-60% ₹999</p>
+                        <a href="product.html">view details</a>
+
+                    </div>
+                    <div class="small-product">
+                        <img src="https://m.media-amazon.com/images/I/61EmpOqn1XL._AC_SY95_.jpg" alt="Product 2" />
+                        <p class="product-name">Lymio Men T-Shirt || T-Shirt for Men || Polo T Shirt || T-Shirt
+                            (Polo-51-54)</p>
+                        <p class="product-price">-83% ₹499</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://m.media-amazon.com/images/I/71wQBXJkgUL._AC_SY95_.jpg" alt="Product 3" />
+                        <p class="product-name">Lymio Men T-Shirt || T-Shirt for Men || Polo T Shirt (Polo-55-58)</p>
+                        <p class="product-price">-86% ₹429</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <div class="small-product">
+                        <img src="https://m.media-amazon.com/images/I/61HEzU6i-uL._AC_SY95_.jpg" alt="Product 4" />
+                        <p class="product-name">Allen Solly Men Cotton Solid Regular Fit Polo</p>
+                        <p class="product-price">-46% ₹749</p>
+                        <a href="product.html">view details</a>
+                    </div>
+                    <a href="#" class="see-more-link">See more</a>
+
+                </div>
+            </div>
+
+
+            <!-- BOX-4 -->
+
+
+            <div class="big-box">
+                <div class="big-box-title">Up to 60% Off | Top tech deals from nearby stores</div>
+
+                <div class="main-product">
+                    <img src="https://m.media-amazon.com/images/I/51awbo+isZL._AC_SY175_.jpg" alt="Main Product">
+                    <div class="main-product-title">
+                        MICROWARE HDTV Cable for iPhone 8 Pin to HDMI VGA 1080P 4k 30Hz Video Audio
+                        Photo Computer Cord Laptop TV Projector Accessories for iPhone</div>
+                    <div class="main-product-price">₹2,496<span class="old-price">₹12,999</span></div>
+                    <a href="product.html">view details</a>
+                </div>
+
+                <div class="suggested-thumbnails">
+                    <img src="https://m.media-amazon.com/images/I/51awbo+isZL._AC_SY175_.jpg" alt="Thumb 1">
+                    <img src="https://m.media-amazon.com/images/I/51hgHfJUadL._AC_SY55_.jpg" alt="Thumb 2">
+                    <img src="https://m.media-amazon.com/images/I/51YJY4fEoLL._AC_SY55_.jpg" alt="Thumb 3">
+                    <img src="https://m.media-amazon.com/images/I/51fmP+FYfjL._AC_SY55_.jpg" alt="Thumb 4">
+                </div>
+
+                <div class="see-more-link"><a href="#">See more</a></div>
+            </div>
+        </section>
+    </section>
+
+    <!-- WIDE-BOX 3 -->
+    <section class="section-padding">
+        <div class="amazon-section">
+            <div class="section-content">
+                <div class="section-title">
+                    Up to 60% off | Trending products from Emerging Businesses
+                    <a href="#" class="see-more-link">See more</a>
+                </div>
+
+                <div class="carousel-container">
+                    <button class="scroll-btn left">&#10094;</button>
+
+                    <div class="products">
+                        <img src="https://m.media-amazon.com/images/I/61UKK19d8VL._AC_SY200_.jpg" alt="Product 1">
+                        <img src="https://m.media-amazon.com/images/I/51uB35vUM6L._AC_SY200_.jpg" alt="Product 2">
+                        <img src="https://m.media-amazon.com/images/I/71gws3S21fL._AC_SY200_.jpg" alt="Product 3">
+                        <img src="https://m.media-amazon.com/images/I/912tcfPajcL._AC_SY200_.jpg" alt="Product 4">
+                        <img src="https://m.media-amazon.com/images/I/61o44bX8giL._AC_SY200_.jpg" alt="Product 5">
+                        <img src="https://m.media-amazon.com/images/I/811+WdwdtjL._AC_SY200_.jpg" alt="Product 6">
+                        <img src="https://m.media-amazon.com/images/I/81QUZjovaxL._AC_SY200_.jpg" alt="Product 7">
+                        <img src="https://m.media-amazon.com/images/I/51+WF4Y6UVL._AC_SY200_.jpg" alt="Product 8">
+                        <img src="https://m.media-amazon.com/images/I/513OEyy6K7L._AC_SY200_.jpg" alt="Product 9">
+                        <img src="https://m.media-amazon.com/images/I/81R58U5oHLL._AC_SY200_.jpg" alt="Product 10">
+                    </div>
+
+                    <button class="scroll-btn right">&#10095;</button>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- WIDE-BOX 4 -->
+    <section class="section-padding">
+        <div class="amazon-section">
+            <div class="section-content">
+                <div class="section-title">
+                    Min. 50% off | Unique home finds | Amazon Brands & more
+                    <a href="#" class="see-more-link">See more</a>
+                </div>
+
+                <div class="carousel-container">
+                    <button class="scroll-btn left">&#10094;</button>
+
+                    <div class="products">
+                        <img src="https://m.media-amazon.com/images/I/61vihvwHdBL._AC_SY200_.jpg" alt="Product 1">
+                        <img src="https://m.media-amazon.com/images/I/71My2PbMevL._AC_SY200_.jpg" alt="Product 2">
+                        <img src="https://m.media-amazon.com/images/I/713gjKpStUL._AC_SY200_.jpg" alt="Product 3">
+                        <img src="https://m.media-amazon.com/images/I/71Il+hAxVWL._AC_SY200_.jpg" alt="Product 4">
+                        <img src="https://m.media-amazon.com/images/I/71Fp2VToLXL._AC_SY200_.jpg" alt="Product 5">
+                        <img src="https://m.media-amazon.com/images/I/61GfiZngyIL._AC_SY200_.jpg" alt="Product 6">
+                        <img src="https://m.media-amazon.com/images/I/61Qm+VXoCwL._AC_SY200_.jpg" alt="Product 7">
+                        <img src="https://m.media-amazon.com/images/I/51Wjei45NzL._AC_SY200_.jpg" alt="Product 8">
+                        <img src="https://m.media-amazon.com/images/I/71PPEO-O0kL._AC_SY200_.jpg" alt="Product 9">
+                        <img src="https://m.media-amazon.com/images/I/61CDlwqNwuL._AC_SY200_.jpg" alt="Product 10">
+                    </div>
+
+                    <button class="scroll-btn right">&#10095;</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section-padding">
+        <section class="big-boxes-container">
+
+
+
+
+            <div class="big-box">
+                <div class="big-box-title">Up to 80% off | Handcrafted treasures </div>
+
+                <div class="main-product">
+                    <img src="https://m.media-amazon.com/images/I/718TQlvu5rL._AC_SY175_.jpg" alt="Main Product">
+                    <div class="main-product-title">CARTADEN Wooden Serving Trays Modern Style With Cutout Handle Large,
+                        Medium And Small For Food, Wooden Trays For Breakfast</div>
+                    <div class="main-product-price">₹757<span class="old-price">: ₹1,549</span></div>
+                    <a href="product.html">view details</a>
+                </div>
+
+                <div class="suggested-thumbnails">
+                    <img src="https://m.media-amazon.com/images/I/718TQlvu5rL._AC_SY175_.jpg" alt="Thumb 1">
+                    <img src="https://m.media-amazon.com/images/I/71LS6kUWpML._AC_SY55_.jpg" alt="Thumb 2">
+                    <img src="https://m.media-amazon.com/images/I/91BeqGU-6NL._AC_SY55_.jpg" alt="Thumb 3">
+                    <img src="https://m.media-amazon.com/images/I/71UsYidQW5L._AC_SY55_.jpg" alt="Thumb 4">
+                </div>
+
+                <div class="see-more-link"><a href="#">See more</a></div>
+            </div>
+
+
+
+
+            <div class="big-box">
+                <div class="big-box-title">Starting ₹99 | Start your fitness journey</div>
+                <div class="main1-product">
+                    <a href="product.html"> <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Sports/GW_Desktop/1199101_379x304_Compressed._SY304_CB448278349_.jpg"
+                            alt="Product 1" /></a>
+                </div>
+                <div class="see-more-link"><a href="#">Explore more</a></div>
+            </div>
+
+
+
+
+            <div class="big-box">
+                <div class="big-box-title">Up to 80% off | Handcrafted treasures </div>
+
+                <div class="main-product">
+                    <img src="https://m.media-amazon.com/images/I/61RRNTbOnVL._AC_SY175_.jpg" alt="Main Product">
+                    <div class="main-product-title">MAYNOS Suction Phone Case Mount (Midnight Mystery（Black）)</div>
+                    <div class="main-product-price">₹99<span class="old-price">: ₹599</span></div>
+                    <a href="product.html">View details</a>
+                </div>
+
+                <div class="suggested-thumbnails">
+                    <img src="https://m.media-amazon.com/images/I/61RRNTbOnVL._AC_SY175_.jpg" alt="Thumb 1">
+                    <img src="https://m.media-amazon.com/images/I/71ALUhHMH1L._AC_SY55_.jpg" alt="Thumb 2">
+                    <img src="https://m.media-amazon.com/images/I/71e+WnY7rML._AC_SY55_.jpg" alt="Thumb 3">
+                    <img src="https://m.media-amazon.com/images/I/41TXlDE74uL._AC_SY55_.jpg" alt="Thumb 4">
+                </div>
+
+                <div class="see-more-link"><a href="#">See more</a></div>
+            </div>
+
+
+
+
+            <div class="big-box">
+                <div class="big-box-title">Up to 60% Off | Top tech deals from nearby stores</div>
+
+                <div class="main-product">
+                    <img src="https://m.media-amazon.com/images/I/51aHb9VVMTL._AC_SY175_.jpg" alt="Main Product">
+                    <div class="main-product-title">
+                        Thevasa Women's Everyday Divine Depth V Neck Half Sleeves Blouse</div>
+                    <div class="main-product-price"> ₹798<span class="old-price"> ₹1,099</span></div>
+                    <a href="product.html">View details</a>
+
+                </div>
+
+                <div class="suggested-thumbnails">
+                    <img src="https://m.media-amazon.com/images/I/51aHb9VVMTL._AC_SY175_.jpg" alt="Thumb 1">
+                    <img src="https://m.media-amazon.com/images/I/51ji1qLmc8L._AC_SY55_.jpg" alt="Thumb 2">
+                    <img src="https://m.media-amazon.com/images/I/61xQevdtdYL._AC_SY55_.jpg" alt="Thumb 3">
+                    <img src="https://m.media-amazon.com/images/I/41ySHqH5QIL._AC_SY55_.jpg" alt="Thumb 4">
+                </div>
+
+                <div class="see-more-link"><a href="#">See more</a></div>
+            </div>
+        </section>
+
+    </section>
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="amazon-footer">
+
+        <!-- Back to top -->
+        <div class="back-to-top">
+            <a href="#">Back to top</a>
+        </div>
+
+        <!-- Main footer link sections -->
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>Get to Know Us</h4>
+                <ul>
+                    <li><a href="#">About Amazon</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press Releases</a></li>
+                    <li><a href="#">Amazon Science</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Connect with Us</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/AmazonIN">Facebook</a></li>
+                    <li><a href="https://x.com/AmazonIN">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/amazondotin">Instagram</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Make Money with Us</h4>
+                <ul>
+                    <li><a href="#">Sell on Amazon</a></li>
+                    <li><a href="#">Amazon Accelerator</a></li>
+                    <li><a href="#">Protect and Build Your Brand</a></li>
+                    <li><a href="#">Amazon Global Selling</a></li>
+                    <li><a href="#">Supply to Amazon</a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                    <li><a href="#">Fulfilment by Amazon</a></li>
+                    <li><a href="#">Advertise Your Products</a></li>
+                    <li><a href="#">Amazon Pay</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Let Us Help You</h4>
+                <ul>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Returns Centre</a></li>
+                    <li><a href="#">100% Purchase Protection</a></li>
+                    <li><a href="#">Amazon App Download</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer branding -->
+        <div class="footer-bottom">
+            <div class="footer-branding">
+
+                <div class="footer-logo">
+                    <a href="#"><img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon Logo" /></a>
+                </div>
+
+                <!-- Language + Country -->
+                <div class="footer-settings">
+                    <div class="language-dropdown">
+                        <span>🌐</span>
+                        <select name="language">
+                            <option value="en">English</option>
+                            <option value="hi">हिन्दी</option>
+                            <option value="ta">தமிழ்</option>
+                            <option value="te">తెలుగు</option>
+                            <option value="bn">বাংলা</option>
+                            <option value="mr">मराठी</option>
+                        </select>
+                    </div>
+
+                    <div class="country-india">
+                        🇮🇳 India
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Extra services grid like real Amazon -->
+        <div class="footer-top-links">
+            <div class="footer-links-container">
+                <div class="footer-column">
+                    <h4>AbeBooks</h4>
+                    <ul>
+                        <li><a href="#">Books, art <br> & collectibles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Amazon Web Services</h4>
+                    <ul>
+                        <li><a href="#">Scalable Cloud <br>Computing Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Audible</h4>
+                    <ul>
+                        <li><a href="#">Download <br>Audiobooks</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>IMDb</h4>
+                    <ul>
+                        <li><a href="#">Movies, TV <br> & Celebrities</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Shopbop</h4>
+                    <ul>
+                        <li><a href="#">Designer <br> Fashion Brands</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Amazon Business</h4>
+                    <ul>
+                        <li><a href="#">Everything For <br> Your Business</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Prime Now</h4>
+                    <ul>
+                        <li><a href="#">2-Hour Delivery <br> on Everyday Items</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Amazon Prime Video</h4>
+                    <ul>
+                        <li><a href="#">100 million songs, ad <br>-free <br> Over 15 million podcast <br>episodes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            <a href="#">Conditions of Use & Sale</a> &nbsp;&nbsp; <a href="#">Privacy Notice</a> &nbsp;&nbsp; <a
+                href="#">Interest-Based Ads</a>
+            <br>
+            © 2025, Amazon Clone – Designed for educational purposes only
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+<script>
+   const slideContainer = document.querySelector('.carousel-slide');
+const slides = document.querySelectorAll('.carousel-slide img');
+const prevBtn = document.querySelector('.carousel-btn.prev');
+const nextBtn = document.querySelector('.carousel-btn.next');
+
+let currentIndex = 0;
+const totalSlides = slides.length;
+
+function showSlide(index) {
+    slideContainer.style.transform = `translateX(-${index * 100}vw)`;
+}
+
+// Manual buttons 
+nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    showSlide(currentIndex);
+    resetAutoSlide();
+});
+
+prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    showSlide(currentIndex);
+    resetAutoSlide();
+});
+
+// Auto slide setup 
+let autoSlide = setInterval(() => {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    showSlide(currentIndex);
+}, 5000);
+
+// Reset timer if user clicks manually
+function resetAutoSlide() {
+    clearInterval(autoSlide);
+    autoSlide = setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        showSlide(currentIndex);
+    }, 5000);
+}
+</script>
+
+
+</body>
+
+</html>
