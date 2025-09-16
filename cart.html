@@ -130,85 +130,125 @@
 
 <body>
 
-  <!-- Top Navbar -->
-  <header class="navbar">
-    <!-- Logo -->
-    <div class="nav-logo nav-item" tabindex="0">
-      <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon Logo" />
-    </div>
 
-    <!-- Location -->
-    <div class="nav-location nav-item" tabindex="0">
-      <i class="fa-solid fa-location-dot"></i>
-      <div>
-        <p class="small">Deliver to</p>
-        <p class="bold">India</p>
-      </div>
-    </div>
+    <!--==== Primary Navbar ====-->
+    <header class="navbar">
+        <div class="nav-left">
+            <div class="nav-item nav-hamburger" onclick="toggleMenu()">
+                <span class="hamburger-icon">☰</span>
+            </div>
 
-    <!-- Search -->
-    <div class="nav-search">
-      <select class="search-select">
-        <option>All</option>
-        <option>Electronics</option>
-        <option>Books</option>
-        <option>Fashion</option>
-      </select>
-      <input type="text" placeholder="Search Amazon" />
-      <button><i class="fa-solid fa-magnifying-glass"></i></button>
-    </div>
+            <!-- Sidebar Menu -->
+            <div id="sideMenu" class="side-menu">
+                <!-- Close button -->
+                <div class="close-btn" onclick="closeMenu()">×</div>
+                <h3>Hello, Sign in</h3>
+                <ul>
+                    <li>Your Orders</li>
+                    <li>Wishlist</li>
+                    <li>Recommendations</li>
+                </ul>
+                <hr>
+                <h4>Shop by Category</h4>
+                <ul>
+                    <li>Mobiles</li>
+                    <li>Electronics</li>
+                    <li>Fashion</li>
+                    <li>Prime</li>
+                </ul>
+                <hr>
+                <h4>Help & Settings</h4>
+                <ul>
+                    <li>Your Account</li>
+                    <li>Customer Service</li>
+                    <li>Sign Out</li>
+                </ul>
+            </div>
 
-    <!-- Language -->
-    <div class="nav-lang nav-item" tabindex="0">
-      <img src="https://flagcdn.com/w40/in.png" alt="IN Flag" />
-      <select id="language-select">
-        <option>EN</option>
-        <option>HI</option>
-      </select>
-    </div>
+            <!--==== LOGO ====-->
+            <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon Logo" class="logo">
+            
+            <!-- LOCATION -->
+            <div class="nav-location">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="small-text">Deliver to</span>
+                <span class="bold-text">India</span>
+            </div>
+        </div>
 
-    <!-- Account -->
-    <div class="nav-account nav-item" tabindex="0">
-      <a href="sign-in.html">
-      <p class="small">Hello, sign in</p>
-      <p class="bold">Account & Lists</p></a>
-    </div>
+        <!--==== SEARCH BAR ====-->
+        <div class="nav-search">
+            <select class="search-select">
+                <option>All</option>
+                <option>Mobiles</option>
+                <option>Electronics</option>
+            </select>
+            <input type="text" placeholder="Search Amazon.in">
+            <button>🔍</button>
+        </div>
 
-    <!-- Orders -->
-    <div class="nav-orders nav-item" tabindex="0">
-      
-      <p class="small">Returns</p>
-      <p class="bold">& Orders</p>
-    </div>
+        <!--==== LANGUAGE ====-->
+        <div class="nav-right">
+            <!-- Language Selector -->
+            <div class="nav-lang">
+                <img src="https://flagcdn.com/w20/in.png" alt="Flag" class="lang-flag">
+                <select>
+                    <option>EN</option>
+                    <option>HI</option>
+                </select>
+            </div>
 
-    <!-- Cart -->
-    <div class="nav-cart nav-item" tabindex="0">
-      <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>
-        <span>Cart</span></a>
-    </div>
-  </header>
+            <!--==== ACCOUNT(SIGN IN) ====-->
+            <div class="nav-right">
+                <div class="nav-item">
+                    <a href="sign-in.html"> <span class="small-text">Hello, Sign in</span><br>
+                        <span class="bold-text">Account & Lists</span></a>
+                </div>
+                <!-- Mobile version -->
+                <div class="account-mobile">
+                    <a href="sign-in.html">
+                        <span>Sign in</span></a>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
 
-  <!-- SECONDARY NAVBAR -->
-  <nav class="secondary-navbar">
-    <ul>
-      <li><a href="#">All</a></li>
-      <li><a href="#">Fresh</a></li>
-      <li><a href="#">MX Player</a></li>
-      <li><a href="#">Sell</a></li>
-      <li><a href="#">Best Sellers</a></li>
-      <li><a href="#">Mobiles</a></li>
-      <li><a href="#">Today's Deals</a></li>
-      <li><a href="#">Prime</a></li>
-      <li><a href="#">Customer Service</a></li>
-      <li><a href="#">New Release</a></li>
-      <li><a href="#">Electronics</a></li>
-      <li><a href="#">Fashion</a></li>
-      <li><a href="#">Home & Kitchen</a></li>
-      <li><a href="#">Amazon Pay</a></li>
-      <li><a href="#">Computers</a></li>
-    </ul>
-  </nav>
+            <!--==== RETURN & ORDER ====-->
+        </div>
+        <div class="nav-item">
+            <span class="small-text">Returns</span><br>
+            <span class="bold-text">& Orders</span>
+        </div>
 
+        <!--==== CART ====-->
+        <div class="nav-cart">
+             <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>
+           <span class="cart-text">Cart</span></a>
+        </div>
+
+    </header>
+
+
+    <!--==== Secondary Navbar ====-->
+    <nav class="secondary-navbar">
+        <ul>
+            <li><a href="#">All</a></li>
+            <li><a href="#">Fresh</a></li>
+            <li><a href="#">MX Player</a></li>
+            <li><a href="#">Sell</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Mobiles</a></li>
+            <li><a href="#">Today's Deals</a></li>
+            <li><a href="#">Prime</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">New Release</a></li>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Home & Kitchen</a></li>
+            <li><a href="#">Amazon Pay</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================================================================================================== -->
 
   <body>
 
